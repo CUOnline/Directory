@@ -5,6 +5,6 @@ class DirectoryApp < WolfCore::App
   set :root, File.dirname(__FILE__)
 
   get '/' do
-    slim :index, {:locals => { 'domain'=> request.env['HTTP_HOST'] }}
+    slim :index
   end
 end
